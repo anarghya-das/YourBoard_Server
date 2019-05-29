@@ -92,9 +92,9 @@ if os.getenv('GAE_APPLICATION', None):
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'HOST': '/cloudsql/yourboard:us-central1:yourboard-sql',
+            'HOST': '/cloudsql/yb-server:us-central1:yb-mysql',
             'USER': 'anarghya',
-            'NAME': 'board',
+            'NAME': 'tasks',
         }
     }
 else:
@@ -103,7 +103,7 @@ else:
             'ENGINE': 'django.db.backends.mysql',
             'HOST': '127.0.0.1',
             'PORT': '3306',
-            'NAME': 'board',
+            'NAME': 'tasks',
             'USER': 'anarghya',
         }
     }
