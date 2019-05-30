@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'fw)r$n#j)g$lco1lfz0l!z&=04z3mr+m73bwkyjx_-31)iagb!'
+SECRET_KEY = '[YOUR SECRET KEY]'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -93,8 +93,8 @@ if os.getenv('GAE_APPLICATION', None):
         'default': {
             'ENGINE': 'django.db.backends.mysql',
             'HOST': '/cloudsql/yb-server:us-central1:yb-mysql',
-            'USER': 'anarghya',
-            'NAME': 'tasks',
+            'USER': '[YOUR NAME]',
+            'NAME': '[YOUR DATABASE NAME]',
         }
     }
 else:
@@ -103,8 +103,8 @@ else:
             'ENGINE': 'django.db.backends.mysql',
             'HOST': '127.0.0.1',
             'PORT': '3306',
-            'NAME': 'tasks',
-            'USER': 'anarghya',
+            'NAME': '[YOUR DATABASE NAME]',
+            'USER': '[YOUR NAME]',
         }
     }
 

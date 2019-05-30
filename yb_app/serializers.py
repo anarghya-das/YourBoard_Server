@@ -1,4 +1,4 @@
-"""Serialize class"""
+"""Serializes the database model to be used as an API"""
 from rest_framework import serializers
 from .models import Board
 

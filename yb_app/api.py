@@ -5,7 +5,7 @@ from .serializers import BoardSerializer
 
 
 class BoardViewSet(viewsets.ModelViewSet):
-    """View"""
+    """View which sets the serializer class and adds flitering on user_id and title"""
     queryset = Board.objects.all()
     permission_classes = [
         permissions.AllowAny
